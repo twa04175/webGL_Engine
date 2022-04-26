@@ -85,7 +85,7 @@ function initBuffers(gl) {
     };
 }
 
-// Draw the scene.
+//씬 그리기
 function drawScene(gl, programInfo, buffers) {
     gl.clearColor(0.0, 0.0, 0.0, 1.0); // 배경 검정색
     gl.clearDepth(1.0);                                // 모두 지우기
@@ -181,7 +181,6 @@ function initShaderProgram(gl, vsSource, fsSource) {
 
     return shaderProgram;
 }
-
 
 // 주어진 유형의 셰이더를 생성하고 소스를 업로드 & 컴파일합니다.
 function loadShader(gl, type, source) {
